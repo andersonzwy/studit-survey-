@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel = "stylesheet" href = "style.css">
+    <meta charset="utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/jpg" href="favicon.png"/>
+
+    <title>Studit Survey</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id = "title">Studit Survey Form</h1>
+      <h2 id = "thank">Thank you for taking the time to help us improve Studit!</h2>
+    </header>
+  <form id="survey-form" action="index.html" method="post">
+
+    <div class = "form-group">
+      <!-- for "name" is used to link with id = "name" -->
+      <label id = "question-required" for "name">Name </label>
+      <!-- type "text" specifies a textbox, name = "name" is for readability, placeholder
+      tells the reader what to input into the search box. -->
+      <input type "text" name = "name" id = "name" class = "form-control"
+        placeholder = "Enter your name" required>
+    </div>
+
+    <div class="form-group">
+      <label id = "question-required" for="email">Email</label>
+      <input type="text" name="email" id = "email" class ="form-control"
+      placeholder = "Enter your email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="age" id = "question">Age <span class = "hint">(Optional)</span></label>
+      <input type="number" name="age" id = "age" class =  "form-control"
+      placeholder = "Age" min = "0" max = "99" >
+    </div>
+
+    <div class="form-group">
+      <label for="gender" id = "question">Gender <span class = "hint">(Optional)</span></label>
+      <select id = "gender" name = "gender" class = "form-control">
+        <option disabled selected value> Select your gender </option>
+        <option value = "male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="role" id = "question-required">Which option best describes your current role?</label>
+      <select id = "role" name = "role" class = "form-control" required>
+        <option disabled selected value> Select current role </option>
+        <option value="domestic">Domestic University Student</option>
+        <option value="international">International University Student</option>
+        <option value="highschool">High School Student</option>
+        <option value="teacher">Teacher</option>
+        <option value="parent">Parent</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="interest" id = "question-required">Do you see yourself using Studit on a regular basis?</label>
+      <label class = "radio"><input type="radio" name="interest" value="yes" class = "radio-control"/>Yes</label>
+      <label class = "radio"><input type="radio" name="interest" value="no" class = "radio-control"/>No</label>
+      <label class = "radio"><input type="radio" name="interest" value="maybe" class = "radio-control"/>Maybe</label>
+    </div>
+
+    <div class="form-group">
+      <label for="favourite" id = "question-required">What is your favourite feature of Studit so far? <span class = "hint">(Tick all that applies)</span></label>
+      <label class = "radio"><input type="checkbox" name="favourite" value="student-forum" class = "radio-control"/>Dedicated forum for students</label>
+      <label class = "radio"><input type="checkbox" name="favourite" value="connection" class = "radio-control"/>Connect with other students</label>
+      <label class = "radio"><input type="checkbox" name="favourite" value="ad" class = "radio-control"/>Platform for advertisements</label>
+      <label class = "radio"><input type="checkbox" name="favourite" value="news" class = "radio-control"/>Access to academical news</label>
+    </div>
+
+    <div class="form-group">
+      <label for="comments" id = "question">Any comments or suggestions?<span class = "hint"> (Optional)</span></label>
+      <textarea id = "comment" name = "comment" placeholder = "Enter your comments here..."></textarea>
+    </div>
+
+    <div class = "form-group">
+      <button type="submit" name="submit" id ="submit" class = "submit-button">Submit</button>
+  </form>
+
+  </body>
+</html>

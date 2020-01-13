@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: Poppins;
+
+}
+body {
+  color: white;
+  min-height:100%;
+  background:linear-gradient(0deg, rgba(136, 136, 206, 0.7), rgba(58, 58, 158, 0.8)), url("unimelb.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+header {
+  position: relative;
+  top: 15px;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  font-family: Lato;
+  text-shadow: 4px 1px 2px #2b2b2a;
+}
+
+
+#thank {
+  position: relative;
+  bottom: 20px;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+#survey-form {
+  font-size: 17px;
+  display: block;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 5px;
+  width: 712px;
+  padding: 28px 35px;
+}
+
+@media screen and (max-width: 800px) {
+  #survey-form {
+    width: 90%;
+    padding: 4%
+  }
+
+}
+.form-group {
+  /*border: 2px red solid;*/
+  display: block;
+  margin-bottom: 30px;
+}
+
+#question {
+  display: block;
+  padding-bottom: 4.5px;
+  padding-left: 2px;
+  font-weight:500;
+}
+
+#question-required::before {
+  content:'*';
+  color: #cf3a3c;
+
+}
+
+
+.hint {
+  font-size: 13px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.radio {
+  display:block;
+}
+
+/* use margin instead of padding for space between checkbox and label */
+.radio-control {
+  display: inline;
+  vertical-align: baseline;
+  margin-right: 10px;
+  min-height: 17px;
+  min-width: 17px;
+}
+
+
+/*Textbox and drop down box */
+.form-control {
+  display:block;
+  width: 100%;
+  height: 41px;
+  border-radius: 5px;
+  padding-left: 8px;
+  font-size: 16px;
+  font-family: Poppins;
+  color: rgb(100,100,100);
+}
+
+#comment {
+  border-radius: 5px;
+  padding-left: 8px;
+  font-size: 16px;
+  font-family: Poppins;
+  color: rgb(100,100,100);
+  height: 150px;
+  width: 100%;
+}
+button {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid black;
+  height: 40px;
+  font-size: 17px;
+  background-color: #4fb36a;
+  font-family: Poppins;
+  font-weight: 550;
+  color: black;
+  transition: all 0.15s;
+}
+
+button:hover {
+  border: 1px solid white;
+  color: white;
+
+}
